@@ -11,7 +11,7 @@ public class Space {
     public int sum;//总人数
 
     /**公司模型*/
-    public static class Company {
+    public static class Company implements Comparable<Company> {
 
         public String name;//公司名字
         public int people;//公司人数
@@ -26,6 +26,11 @@ public class Space {
 
             }
 
+        }
+
+        @Override
+        public int compareTo(Company o) {
+            return o.check-this.check;
         }
     }
 }
