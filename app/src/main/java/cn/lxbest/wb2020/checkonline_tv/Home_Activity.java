@@ -490,34 +490,34 @@ public class Home_Activity extends Activity implements OnChartValueSelectedListe
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode){
-            case KeyEvent.KEYCODE_8:
+            case KeyEvent.KEYCODE_7:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                     //前往全屏视频
                     Intent intent=new Intent(this,FullScreenVideo_Activity.class);
                     startActivity(intent);
                 }
                 break;
-            case KeyEvent.KEYCODE_7:
+            case KeyEvent.KEYCODE_8:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                     //立马刷新数据
                     bs=1;
                     getData();
                 }
                 break;
-            case KeyEvent.KEYCODE_6:
+            case KeyEvent.KEYCODE_5:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                    //改变人数显示
                     bs=2;
                     getData();
                 }
                 break;
-            case KeyEvent.KEYCODE_5:
+            case KeyEvent.KEYCODE_2:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                     Intent intent=new Intent(this,ZhuanLi_Activity.class);
                     startActivity(intent);
                 }
                 break;
-            case KeyEvent.KEYCODE_4:
+            case KeyEvent.KEYCODE_9:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                     Intent intent=new Intent(this,ZhuanLiGK_Activity.class);
                     startActivity(intent);

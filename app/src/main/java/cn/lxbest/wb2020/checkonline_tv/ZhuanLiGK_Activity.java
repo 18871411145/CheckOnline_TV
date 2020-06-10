@@ -233,7 +233,7 @@ public class ZhuanLiGK_Activity extends Activity {
             @Override
             public void run() {
                 //过指定时间返回主页
-                Intent intent=new Intent(ZhuanLiGK_Activity.this,Home_Activity.class);
+                Intent intent=new Intent(ZhuanLiGK_Activity.this,FullScreenVideo_Activity.class);
                 startActivity(intent);
             }
         };
@@ -469,7 +469,7 @@ public class ZhuanLiGK_Activity extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode){
-            case KeyEvent.KEYCODE_4:
+            case KeyEvent.KEYCODE_8:
                 if(event.getAction()==KeyEvent.ACTION_DOWN){
                     Intent intent=new Intent(this,Home_Activity.class);
                     startActivity(intent);

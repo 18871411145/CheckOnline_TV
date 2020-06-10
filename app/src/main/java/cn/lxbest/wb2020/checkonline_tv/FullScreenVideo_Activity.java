@@ -2,8 +2,10 @@ package cn.lxbest.wb2020.checkonline_tv;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -36,9 +38,8 @@ public class FullScreenVideo_Activity extends Activity {
 
         videoView=findViewById(R.id.fullscreen_video);
 
-
-
         getVideoData();
+
     }
 
     //@TODO:/var/log/xxx.mp4
@@ -93,6 +94,15 @@ public class FullScreenVideo_Activity extends Activity {
         mediaController.setMediaPlayer(videoView);
         mediaController.setVisibility(View.GONE);
         videoView.start();
+
+        //播放完成监听
+        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Intent intent=new Intent(FullScreenVideo_Activity.this,Home_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
