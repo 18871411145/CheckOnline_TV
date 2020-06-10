@@ -103,6 +103,15 @@ public class FullScreenVideo_Activity extends Activity {
                 startActivity(intent);
             }
         });
+
+        videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+            @Override
+            public boolean onError(MediaPlayer mp, int what, int extra) {
+                Intent intent=new Intent(FullScreenVideo_Activity.this,Home_Activity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
     }
 
 
