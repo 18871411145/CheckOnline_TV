@@ -438,7 +438,11 @@ public class Home_Activity extends Activity implements OnChartValueSelectedListe
         Container container;
         @Override
         public int getCount() {
-            return list.size();
+            if(list.size()<=5){
+                return list.size();
+            }else{
+                return 5;
+            }
         }
 
         @Override
