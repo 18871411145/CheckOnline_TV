@@ -15,7 +15,7 @@ public class Const {
     public static final long hour=1000*60*60;//一秒钟
 
     //公司名称
-    public static String Company="贝壳";
+    public static String Company="贝壳瑞晟";
 
     public static class Env {
         /**
