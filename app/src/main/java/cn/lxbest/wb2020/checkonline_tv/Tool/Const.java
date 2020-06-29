@@ -5,8 +5,7 @@ import android.graphics.Color;
 
 public class Const {
 
-//    public static final String server = "http://192.168.31.83:8080/checkonline_service";
-    public static final String server = "http://39.100.102.110:8080/checkonline_service";
+    public static final String server = "http://39.100.102.110/checkonline_service";
     public static final String qnserver = "http://qnyeyimg.lxbest.cn";
     public static final String contentType="application/json";
 
